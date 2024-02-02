@@ -10,6 +10,6 @@ Numéro de capteur | Heure | Puissance | Adresse MAC
 
 new = Whitelist fin éxecution - Whitelist debut éxecution...
 
-MAC 
----
-00:00:00:00:00:00
+MAC |
+--- |
+00:00:00:00:00:00 |
