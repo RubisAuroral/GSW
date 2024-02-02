@@ -1,0 +1,1 @@
+./listerner.sh | ./parser.sh
