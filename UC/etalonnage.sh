@@ -1,7 +1,7 @@
 #!/bin/bash
 
-capteurs=2
+capteurs=1
 
-for (( i=0; i<=capteurs; i++ )); do
+for (( i=0; i<capteurs; i++ )); do
 	nc -l 12345
 done
