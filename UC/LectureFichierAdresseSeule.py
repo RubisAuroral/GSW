@@ -32,7 +32,6 @@ def CheckArgument(Argument):
 def CreationVecteur(Liste):
     ValeurVecteur = [-1,-1]
     for Valeur in Liste:
-        #print("valeur", Valeur)
         if len(Valeur) != 0:
             ValeurVecteur.append(np.mean(Valeur))
         else:
@@ -74,5 +73,5 @@ for Sample in ColonneNumeroCapteur:
 ListeValeur = [Capteur1, Capteur2, Capteur3, Capteur4, Capteur5]
 Vecteur = CreationVecteur(ListeValeur)
 
-Bonjour = Test(Vecteur)
+Resultat = MoindreCarre(Vecteur)
 
