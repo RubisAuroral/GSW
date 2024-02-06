@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mac="c0:ee:fb:dd:67:9d"
+mac="00:b5:d0:ed:54:3b"
 nb=5
 
 data=$(sudo tcpdump -i wlan1mon -c "$nb" -e type data and ether host "$mac" 2>/dev/null)
