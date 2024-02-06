@@ -2,6 +2,13 @@ import numpy as np
 import pandas as pd
 import sys
 
+from MoindreCarre import *
+
+# Lancer le programme avec
+# python3 LectureFichierAdresseSeule.py ../ExempleDeValeurs.csv 00:b5:d0:ed:54:3B
+# python3 LectureFichierAdresseSeule.py ../Donnees.csv 00:b5:d0:ed:54:3B
+
+# 00:b5:d0:ed:54:3b
 
 # Check l'argument (chemin fichier + adresse voulu)(sinon mettre ==2)
 def CheckArgument(Argument):   
@@ -10,12 +17,12 @@ def CheckArgument(Argument):
         CheminFichier = sys.argv[1]
         Adresse = sys.argv[2]
         
-        print("On prend le fichier en argument")
+        #print("On prend le fichier en argument")
 
     else:
-        print("Aucun fichier en argument, On prend le fichier test")
-        CheminFichier = "./ExempleDeValeurs.csv"
-        Adresse = "Adresse1"
+        #print("Aucun fichier en argument, On prend le fichier test")
+        CheminFichier = "ExempleDeValeurs.csv"
+        Adresse = "22:a6:6b:a5:a8:f2"
 
     data = pd.read_csv(CheminFichier)
     return data, Adresse
@@ -66,7 +73,5 @@ for Sample in ColonneNumeroCapteur:
 ListeValeur = [Capteur1, Capteur2, Capteur3, Capteur4, Capteur5]
 Vecteur = CreationVecteur(ListeValeur)
 
-# Vecteur de sortie
-print(Vecteur)
+Bonjour = Test(Vecteur)
 
-# A rentrer dans "test" dans le fichier moindre carré.py
