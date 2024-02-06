@@ -7,6 +7,7 @@ from MoindreCarre import *
 # Lancer le programme avec
 # python3 LectureFichierAdresseSeule.py ../ExempleDeValeurs.csv 00:b5:d0:ed:54:3B
 # python3 LectureFichierAdresseSeule.py ../Donnees.csv 00:b5:d0:ed:54:3B
+# python3 LectureFichierAdresseSeule.py ExempleDeValeurs.csv 00:b5:d0:ed:54:3B
 
 # 00:b5:d0:ed:54:3b
 
