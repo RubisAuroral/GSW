@@ -20,7 +20,7 @@ Votre raspberry devrait être prête à utilisation
 ## Installer l'unité centrale : 
 
 Il peut s'agir d'un pc ou d'une raspberry, comme votre bon vouloir. Les installations sont les mêmes que sur la raspberry
-De plusn il devra avoir les éléments suivants :
+De plus, il devra avoir les éléments suivants :
 - python
 - pip install pandas
 - pip install numpy
