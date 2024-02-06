@@ -37,7 +37,7 @@ def ComparaisonVecteur(ListePos, PositionActuelle):
     return ListeMeilleurResultat, ListeMeilleurIndice
 
 
-def Test(Vecteur):
+def MoindreCarre(Vecteur):
         
     # python .\MoindreCarre.py [Vecteur]
     CheminEtalonnage = "Etalonnage.csv"
@@ -51,8 +51,7 @@ def Test(Vecteur):
         return PositionEtalon
 
 
-    # Faut juste mettre a la main les differentes positons 
-    # s'il y a plus que 9 == Ajouter P10 / P11 etc
+    # Position D'etalonnage
     P1 = RecupEtalon(data['Position1'])
     P2 = RecupEtalon(data['Position2'])
     P3 = RecupEtalon(data['Position3'])
@@ -67,22 +66,15 @@ def Test(Vecteur):
 
     ListePosition = [P1,P2,P3,P4,P5,P6,P7,P8,P9]
 
-    # Capteur
-    # Valeur en %, faut remettre sur 8*8 metres
+    # Position des capteurs
+    # Valeur en % de la distance maximal de la salle
     C1 = [0, 0]
     C2 = [100, 0]
     C3 = [100, 100]
     C4 = [0, 100]
     C5 = [50, 50]
 
-    #print("A", P1)
-
-    test = Vecteur
-
-    #print("Test", test)
-
-
-    MaListeValeur, MaListeIndice = ComparaisonVecteur(ListePosition,test)
+    MaListeValeur, MaListeIndice = ComparaisonVecteur(ListePosition,Vecteur)
     print(MaListeValeur)
     print(MaListeIndice)
 
@@ -90,4 +82,4 @@ def Test(Vecteur):
     print("Position correspondante", ListePosition[MaListeIndice[0]][0:2])
 
 
-    return 0
+    return MaListeIndice[0]+1
